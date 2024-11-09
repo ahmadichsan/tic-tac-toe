@@ -1,0 +1,55 @@
+.plus-jakarta-sans-game {
+	font-family: "Plus Jakarta Sans", sans-serif;
+	background-color: #000;
+	/* Black background */
+	color: #ffffff;
+	/* White text for contrast */
+}
+
+.tile {
+	cursor: pointer;
+	transition: background-color 0.3s, transform 0.2s;
+	border-radius: 50%;
+	/* Make the tile round */
+	background-color: #333;
+	/* Dark gray for contrast */
+	color: #ffffff;
+	/* White text for tile content */
+}
+
+.tile.hover-x:hover {
+	background-color: rgba(255, 0, 0, 0.5);
+	/* Semi-transparent red for player X */
+	transform: scale(1.05);
+	/* Slight zoom effect */
+}
+
+.tile.hover-o:hover {
+	background-color: rgba(0, 0, 255, 0.5);
+	/* Semi-transparent blue for player O */
+	transform: scale(1.05);
+	/* Slight zoom effect */
+}
+
+.tile.disabled {
+	cursor: default;
+	pointer-events: none;
+}
+
+.tile.highlight {
+	background-color: #4caf50;
+	/* Green for winning tiles */
+	animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+	from {
+		background-color: #4caf50;
+		/* Green */
+	}
+
+	to {
+		background-color: #81c784;
+		/* Light green */
+	}
+}
