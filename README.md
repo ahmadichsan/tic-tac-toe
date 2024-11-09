@@ -29,7 +29,7 @@ To run this project, follow these steps:
 
 ## Code Structure
 - `index.html`: The main entry point of the game.
-- `style.css`: Contains the styles for the game.
+- `styles.css`: Contains the styles for the game.
 - `script.js`: Contains the game logic and functions.
 
 ## Contributing
